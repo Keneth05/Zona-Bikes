@@ -1,0 +1,247 @@
+:root {
+    --ColorHeader: #3277c5;
+    --ColorMenu: #004c70;
+    --ColorLetras: aliceblue;
+}
+.image-container {
+    width: 100%;
+}
+
+.logo{
+    margin-top: 12px;
+    width: 100%;
+    height: 50px;
+}
+.Welcome {
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.041);
+    padding-bottom: 40px 25px;
+}
+
+.image-background {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(85%);
+}
+.BImage{
+    background-color: aliceblue;
+    color: black;
+}
+.BImage:hover{
+    background-color: var(--ColorHeader);
+    color: aliceblue;
+}
+.nav-wrapper .active a {
+    text-decoration: underline; 
+    color: rgb(231, 231, 231);
+    font-weight: bold;
+    scale: 1.2;
+}
+nav ul li a:hover {
+    background-color: transparent;
+}
+.Header{
+    padding: 0 30px;
+}
+.logo-text{
+    font-size: 20px;
+    margin-left: 7px;
+}
+
+.nav-wrapper .brand-logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-bottom: 8px;
+}
+.navbar {
+    background-color: var(--ColorMenu);
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-background {
+    background-color: #004a70;
+}
+
+.sidenav {
+    background-color: #01527ad0;
+}
+
+.brand-logo .logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.Menu-Logo {
+    margin-left: 15px;
+    margin-top: 140px;
+    width: 280px;
+
+}
+.sidenav .close-sidenav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #044f72;
+    height: 56px;
+}
+
+.sidenav .close-sidenav i {
+    font-size: 36px;
+}
+
+.Link{
+    margin-top: 20px;
+}
+
+.sidenav a.Link {
+    font-size: 20px;
+}
+
+
+
+.footer {
+    background-color: var(--ColorMenu);
+    padding: 14px 10px;
+}
+.footer__section {
+    padding: 10px 20px 20px 20px;
+}
+.footer__icon{
+    justify-content: space-between;
+    width: 25px;
+    height: 25px;
+    transition: all ease-in-out 300ms;
+}
+.footer__icon:hover {
+    transform: scale(1.2);
+}
+
+.footer__title-bicycle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__title--name{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.footer__social-media{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer__conditions {
+    display: flex;
+    text-align: center;
+}
+
+.footer__contact-item{
+    display: flex;
+    align-items: center;
+}
+
+.footer__text{
+    margin-left: 15px;
+    width: 100%;
+    color: var(--ColorLetras);
+    margin-top: 10px;
+}
+.link:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 250ms;
+    color: rgb(10, 0, 0);
+    text-decoration: underline;
+}
+.footer__title,
+.footer__text{
+    color: var(--ColorLetras);
+}
+
+.footer__title {
+    margin-top: 8px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.footer__link{
+    list-style: none;
+}
+
+.footer__text--conditions{
+    width: 100%;
+}
+.footer__links-container a {
+    color: var(--ColorLetras);
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.footer__links-container {
+    padding: 0;
+}
+body {
+    margin: 0 auto;
+}
+@media (max-width: 992px) {
+    .nav-wrapper .sidenav-trigger {
+        left: 10px;
+        right: auto;
+        position: absolute;
+    }
+
+    .nav-wrapper .brand-logo {
+        right: -90px;
+        bottom: 1px;
+        left: auto;
+        position: absolute;
+    }
+
+}
+@media (min-width:990px) {
+
+    .link {
+        text-decoration: none;
+        color: var(--ColorLetras);
+        font-size: 19px;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .footer__section--links{
+        margin-left: 110px;
+    }
+    .footer__section{
+        width: 330px;
+        padding: 20px;
+    }
+    .footer__text--description{
+        margin-left: 0;
+    }
+    .footer__links-container .footer__link a:hover{
+        text-decoration: underline;
+    }
+}
